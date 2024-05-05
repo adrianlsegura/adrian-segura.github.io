@@ -63,6 +63,19 @@
     padding-top: 30px;
 }
 
+.smallimg {
+    width: 50%;
+    height: 50%;
+}
+
+.about {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 30px
+}
+
 #title {
     position: absolute;
     text-align: center;
