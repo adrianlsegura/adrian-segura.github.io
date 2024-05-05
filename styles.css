@@ -55,6 +55,14 @@
     color: black;
 }
 
+.breakpad {
+    padding: 130%;
+}
+
+.teamheading {
+    padding-top: 30px;
+}
+
 #title {
     position: absolute;
     text-align: center;
@@ -68,6 +76,11 @@
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#bios {
+    text-align: center;
+    padding-bottom: 40px;
 }
 
 #demo {
@@ -88,4 +101,10 @@
     height: 100%;
     background-size: cover;
     z-index: 1;
+}
+
+#members {
+    width: 50%;
+    height: 50%;
+    padding-bottom: 30px;
 }
