@@ -4,7 +4,7 @@
   "description": "Adrian Segura's Personal Website",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx @tailwindcss/cli -i src/input.css -o docs/main.css --watch"
+    "tailwind": "npx @tailwindcss/cli -i src/input.css -o main.css --watch"
   },
   "repository": {
     "type": "git",
