@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-100: oklch(0.962 0.059 95.617);
     --color-lime-600: oklch(0.648 0.2 131.684);
     --color-lime-800: oklch(0.453 0.124 130.933);
     --color-lime-900: oklch(0.405 0.101 131.063);
@@ -231,15 +232,100 @@
   .mb-px {
     margin-bottom: 1px;
   }
+  .flex {
+    display: flex;
+  }
   .h-full {
     height: 100%;
   }
   .w-full {
     width: 100%;
   }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .space-x-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 5) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-10 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 10) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-11 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 11) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 11) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-100 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 100) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 100) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-110 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 110) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 110) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-115 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 115) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 115) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-120 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 120) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 120) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-130 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 130) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 130) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-150 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 150) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 150) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+  .bg-amber-100 {
+    background-color: var(--color-amber-100);
   }
   .bg-neutral-50 {
     background-color: var(--color-neutral-50);
@@ -250,6 +336,9 @@
   .\[background-size\:16px_16px\] {
     background-size: 16px 16px;
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
@@ -258,6 +347,9 @@
   }
   .text-left {
     text-align: left;
+  }
+  .text-right {
+    text-align: right;
   }
   .font-primary {
     font-family: var(--font-primary);
@@ -317,6 +409,11 @@
       width: calc(1/2 * 100%);
     }
   }
+}
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 @property --tw-border-style {
   syntax: "*";
