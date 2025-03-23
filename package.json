@@ -1,0 +1,23 @@
+{
+  "name": "adrian-segura.github.io",
+  "version": "1.0.0",
+  "description": "Adrian Segura's Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i ./src/input.css -o ./build/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrian-segura/adrian-segura.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrian-segura/adrian-segura.github.io/issues"
+  },
+  "homepage": "https://github.com/adrian-segura/adrian-segura.github.io#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.15",
+    "tailwindcss": "^4.0.15"
+  }
+}
