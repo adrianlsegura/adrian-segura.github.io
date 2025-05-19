@@ -217,8 +217,8 @@
   .flex {
     display: flex;
   }
-  .h-full {
-    height: 100%;
+  .min-h-screen {
+    min-height: 100vh;
   }
   .w-full {
     width: 100%;
@@ -248,6 +248,9 @@
   }
   .\[background-size\:16px_16px\] {
     background-size: 16px 16px;
+  }
+  .bg-repeat {
+    background-repeat: repeat;
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
